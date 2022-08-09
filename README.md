@@ -1,77 +1,31 @@
-# AirBnB Clone
-This will be the overarching final project that is aimed at learning fundamental concepts of higher level programming and web application development processes..
-We will be deploying a simple copy of the AirBnB website. This will evolve through four critical components:
-- A command interpreter to manipulate data without a visual interface, like in a Shell (perfect for development and debugging)
-- A website (the front-end) that shows the final product to everybody: static and dynamic
-- A database or files that store data (data = objects)
-- An API that provides a communication interface between the front-end and your data (retrieve, create, delete, update them)
+# Project 0x02. AirBnB clone - MySQL :computer:  
 
-# Overview
-The project will grow through several steps:
-- The console: Where we'll create our data model, manage objects via console, store and persist objects to a JSON file.
-- Web static: Where we will learn HTML/CSS, create the HTML of the application, create a template for each object.
-- MySQL storage: Where we'll replace the file storage by a DB storage, map our models to a table in DB using an ORM
-- Web framework - templating: Where we'll create our first web server in Python, make static HTML file dynamic using objects stored in a file or DB
-- RESTful API: Where we'll expose all our objects stored via JSON web interface, manipulate our objects via a RESTful API
-- Web dynamic: Where we'll learn JQuery, load objects from client-side using our own RESTful API
+## :page_facing_up: In this project we created version 2 of the Airbnb Clone where we will connect with the databases to continue with the advancement of it.
 
-# Files and Directories
----------------------
-# Models
-This directory contains all classes used for the entire project. The class will be a representation of the object/instance in OOP.
+### 📋 Requirements
+***
+#### Python Scripts  
 
-- base_model.py: This file is the base class of all our models.
-- engine: This directory will contain all storage classes. 
+* Allowed editors: `vi`, `vim`, `emacs`.  
+* Files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5).  
+* Files must be executable.
+* The length of your files will be tested using `wc`.
 
-# Tests
-This directory contains all unit tests.
+#### Python Unit Tests
 
-# Console.py
-This file is the entry point of our command interpreter.
+* All your test files should be inside a folder `tests`.
+* You have to use the unittest module.
+* All your test files should be python files (extension: `.py`).
+* All your test files and folders should start by `test_`.  
+* Your file organization in the tests folder should be the same as your project: ex: for `models/base_model.py`, unit tests must be in: `tests/test_models/test_base_model.py`.  
 
+#### SQL Scripts  
 
-# The command interpreter
----------------------------
-# How to start
-The code for the command interpreter is in console.py.
+* Files will be executed on Ubuntu 20.04 LTS using `MySQL 8.0`.  
+* Files will be executed with `SQLAlchemy` version `1.4.x`.  
+* All SQL keywords should be in uppercase (`SELECT`, `WHERE`…).  
+* The length of your files will be tested using `wc`.  
 
-To start the console, type ./console.py or python3 console.py in the directory console.py is in. This will make the command prompt (hbnb) appear on your terminal.
-# How to use
-The console accepts the following commands: EOF (CTRL+D), quit, create, show, destroy, all, and update.
-
-Command completion and command history are supported.
-
-Entering <TAB> will autocomplete or show you the options for autocompletion.
-
-# EOF and Quit
-Typing CTRL+D or quit into the console will exit the console.
-
-# Examples
-```
-vagrantAirBnB_clone$./console.py
-(hbnb) help
-
-Documented commands (type help <topic>):
-========================================
-EOF  all  create  destroy  help  quit  show  update
-
-(hbnb) all MyModel
-** class doesn't exist **
-(hbnb) create BaseModel
-7da56403-cc45-4f1c-ad32-bfafeb2bb050
-(hbnb) all BaseModel
-[[BaseModel] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}]
-(hbnb) show BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
-[BaseModel] (7da56403-cc45-4f1c-ad32-bfafeb2bb050) {'updated_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772167), 'id': '7da56403-cc45-4f1c-ad32-bfafeb2bb050', 'created_at': datetime.datetime(2017, 9, 28, 9, 50, 46, 772123)}
-(hbnb) destroy BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
-(hbnb) show BaseModel 7da56403-cc45-4f1c-ad32-bfafeb2bb050
-** no instance found **
-(hbnb) quit
-```
-
-# Authors
-Robert Mong'are - [Github](https://github.com/mongarerobert3) <br />
-Adam Keino - [Github](https://github.com/adamkeino)
-
-# License
-Public Domain. No copyright protection. 
+### 🎨 Style  
+***  
+* Code should use the PEP 8 style (version 2.7.*).  
